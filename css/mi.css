@@ -1,0 +1,322 @@
+body{
+  font-family: Arial,Times;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color:;
+  overflow: hidden;
+}
+
+/*Kocka*/
+
+.kocka1{
+  opacity: 0.9;
+  margin-left: 80px;
+  margin-top: 200px;
+
+  height: 230px;
+  width :400px;
+  background-color: black;
+  position: absolute;
+  border: #ffffff 3px solid;
+}
+
+.kocka2{
+  opacity: 0.9;
+  margin-left: 80px;
+  margin-top: 200px;
+
+  height: 230px;
+  width :400px;
+  background-color: #9c8d6a;
+  position: absolute;
+}
+
+.kocka3{
+  opacity: 0.9;
+  margin-left: 80px;
+  margin-top: 200px;
+
+  height: 230px;
+  width :400px;
+  background-color: black;
+  position: absolute;
+}
+
+.kocka4{
+  opacity: 0.9;
+  margin-left: 80px;
+  margin-top: 200px;
+
+  height: 230px;
+  width :400px;
+  background-color: #555;
+  position: absolute;
+}
+
+
+/*sajt*/
+
+.slajd1, .slajd2, .slajd3, .slajd4{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img{
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  animation: zoom-out 5s linear infinite;
+}
+
+.tekst{
+  width: 600px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+/*boje teksta u kockama*/
+
+.slajd1 h1{
+  color: #ECF7F9;
+}
+
+.slajd1 p{
+  color: #ECF7F9;
+}
+
+.slajd1 span{
+  background: #ECF7F9;
+}
+
+
+.slajd2 h1{
+  color:#f7e3d6;
+}
+
+.slajd2 p{
+  color:#F7E6D6;
+}
+
+.slajd2 span{
+  background: #f7e6d6;
+}
+
+
+.slajd3 h1{
+  color:#80D436;
+}
+
+.slajd3 p{
+  color:#80D436;
+}
+
+.slajd3 span{
+  background: #80D436;
+}
+
+
+
+.slajd4 h1{
+  color:white;
+}
+
+.slajd4 p{
+  color:white
+}
+
+.slajd4 span{
+  background: white;
+}
+
+/*-----------------*/
+
+.tekst h1{
+  margin-bottom: 40px;
+}
+
+.tekst p{
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 80px;
+}
+
+.tekst span{
+  height: 1px;
+  width: 250px;
+  position:absolute;
+  left: 0;
+}
+
+.dugme{
+  float: right;
+  position:relative;
+  padding-right: 270px;
+}
+
+.dugme button{
+  padding: 9px 20px;
+  text-align: center;
+}
+
+/*boje dugmeta*/
+
+.slajd1 button{
+  color:#ECF7F9;
+  background-color: black;
+}
+
+.slajd2 button{
+  color: #9c8d6a;
+  background-color: #F7E6D6;
+}
+
+.slajd3 button{
+  color: #80D436;
+  background-color: black;
+  border: #80d436 3px solid;
+}
+
+.slajd4 button{
+  color: #555;
+}
+
+
+
+
+/*-----------*/
+
+/*Animacije*/
+
+.slajd1{
+  animation: prikaz1 20s linear infinite;
+}
+
+.slajd2{
+  animation: prikaz2 20s linear infinite;
+}
+
+.slajd3{
+  animation: prikaz3 20s linear infinite;
+}
+
+.slajd4{
+  animation: prikaz4 20s linear infinite;
+}
+
+
+/*Img*/
+
+@keyframes zoom-out{
+  100%{
+    width:100%;
+  }
+}
+
+
+
+@keyframes prikaz1{
+  0%{
+    visibility: visible;
+  }
+
+  25%{
+    visibility: hidden;
+  }
+
+  50%{
+    visibility: hidden;
+  }
+
+  75%{
+    visibility: hidden;
+  }
+
+  100%{
+    visibility: visible;
+  }
+}
+
+@keyframes prikaz2{
+  0%{
+    visibility: hidden;
+  }
+
+  25%{
+    visibility: hidden;
+  }
+
+  50%{
+    visibility: visible;
+  }
+
+  75%{
+    visibility: hidden;
+  }
+
+  100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes prikaz3{
+  0%{
+    visibility: hidden;
+  }
+
+  25%{
+    visibility: hidden;
+  }
+
+  50%{
+    visibility: hidden;
+  }
+
+  75%{
+    visibility: visible;
+  }
+
+  100%{
+    visibility: hidden;
+  }
+}
+
+
+
+@keyframes prikaz4{
+  0%{
+    visibility: hidden;
+  }
+
+  25%{
+    visibility: hidden;
+  }
+
+  50%{
+    visibility: hidden;
+  }
+
+  75%{
+    visibility: hidden;
+  }
+
+  100%{
+    visibility: visible;
+  }
+}
+
+/*responsive*/
+
+@media (max-width: 1200px){
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
