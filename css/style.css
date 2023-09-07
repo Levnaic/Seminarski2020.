@@ -33,6 +33,7 @@ header{
 
 
 header h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 50px;
   text-align: center;
 }
@@ -59,10 +60,6 @@ header li{
   border-right: #d1e8e2 3px solid;
 }
 
-header .nas a{
-
-}
-
 header a:hover{
   text-shadow: 0px 0px 5px #d1e8e2;
 }
@@ -81,7 +78,6 @@ header a:hover{
   padding-top: 250px;
   color: #116466;
   text-shadow: #000 0px 0px 1px;
-  text
 }
 
 /*paragraf*/
